@@ -2,11 +2,16 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  // entry: './src/main.js',
+  entry: './src/VueAreaSelector/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.js'
+    // filename: 'build.js',
+    filename: 'vue-area-selector.js',
+    library:'vue-area-selector.js',
+    libraryTarget:'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [
@@ -96,7 +101,7 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
+      sourceMap: false,
       compress: {
         warnings: false
       }
