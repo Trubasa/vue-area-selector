@@ -1,18 +1,10 @@
 # vue-area-selector
 
-> 基于vue的区域选择插件
+> 基于vue的区域选择插件,返回一个标签内被框选的区域，或者点击的位置
 
-## Build Setup
+- [在线demo](https://trubasa.github.io/vue-area-selector/example/)
+- [在线文档](https://trubasa.github.io/vue-area-selector/doc/)
 
-``` bash
-# install dependencies
-npm install
+![img](readme/images/2.png)
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
