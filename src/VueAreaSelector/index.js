@@ -8,5 +8,5 @@ let plugin={
 if(typeof window!==undefined&&window.Vue){
   window.Vue.use(plugin)
 }
-
+import  '../assets/iconfont/iconfont.css'
 export default plugin;
